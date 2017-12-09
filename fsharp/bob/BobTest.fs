@@ -7,9 +7,9 @@ open Bob
 let ``Stating something`` () =
     Assert.Equal(hey "Tom-ay-to, tom-aaaah-to.", "Whatever.")
 
-[<Fact (Skip = "Remove to run Fact")>]
+[<Fact>]
 let ``Shouting`` () =
-    Assert.Equal(hey "WATCH OUT!", "Whoa, chill out!")
+    Assert.Equal("Whoa, chill out!", hey "WATCH OUT!")
 
 [<Fact (Skip = "Remove to run Fact")>]
 let ``Asking a question`` () =
