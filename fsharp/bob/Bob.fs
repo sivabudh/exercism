@@ -3,5 +3,5 @@ module Bob
 let hey message = 
     match message with
     | "Tom-ay-to, tom-aaaah-to." -> "Whatever."
-    | "WATCH OUT!" -> "Whoa, chill out!"
+    | msg when msg = msg.ToUpper() -> "Whoa, chill out!"
     | _ -> "Err...come again?"

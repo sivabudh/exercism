@@ -19,11 +19,11 @@ let ``Asking a question`` () =
 let ``Asking a numeric question`` () =
     Assert.Equal(hey "You are, what, like 15?", "Sure.")
 
-[<Fact (Skip = "Remove to run Fact")>]
+[<Fact>]
 let ``Forceful questions`` () =
     Assert.Equal(hey "WHAT THE HELL WERE YOU THINKING?", "Whoa, chill out!")
 
-[<Fact (Skip = "Remove to run Fact")>]
+[<Fact>]
 let ``Shouting numbers`` () =
     Assert.Equal(hey "1, 2, 3 GO!", "Whoa, chill out!")
 
@@ -35,11 +35,11 @@ let ``Only numbers`` () =
 let ``Question only with numbers`` () =
     Assert.Equal(hey "4?", "Sure.")
 
-[<Fact (Skip = "Remove to run Fact")>]
+[<Fact>]
 let ``Shouting with special characters`` () =
     Assert.Equal(hey "ZOMG THE %^*@#$(*^ ZOMBIES ARE COMING!!11!!1!", "Whoa, chill out!")
 
-[<Fact (Skip = "Remove to run Fact")>]
+[<Fact>]
 let ``Shouting with no exlamation mark`` () =
     Assert.Equal(hey "I HATE YOU", "Whoa, chill out!")
 
